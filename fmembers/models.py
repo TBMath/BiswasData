@@ -4,13 +4,12 @@ from django.utils import timezone
 
 # Create your models here.
 class Growth(models.Model):
-    name = models.CharField(max_length=300)
+    growth = models.CharField(max_length=300)
 
-    def __str__(self):
-        return self.name
 
 
 class Person(models.Model): 
+
     name = models.CharField(max_length=300)
     age = models.IntegerField()
     growth = models.ForeignKey(Growth, on_delete=models.CASCADE)
