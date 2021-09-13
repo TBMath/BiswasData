@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+    {% block content %}
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Growth</th> 
+                </tr>
+            </thead>
+            <tbody>
+                {% for pr2 in person %}
+                <tr>
+                    <td>{{ pr2.id }}</td>
+                    <td>{{ pr2.name }}</td>
+                    <td>{{ pr2.age }}</td>
+                    <td>{{ pr2.growth}}</td>
+                    <td></td>
+                    {% endfor %}
+                </tr>
+            </tbody>
+    </table>
+    {% endblock  %}

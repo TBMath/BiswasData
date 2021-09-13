@@ -9,7 +9,6 @@ class Growth(models.Model):
 
 
 class Person(models.Model): 
-
     name = models.CharField(max_length=300)
     age = models.IntegerField()
     growth = models.ForeignKey(Growth, on_delete=models.CASCADE)
