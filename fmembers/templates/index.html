@@ -1,24 +1,29 @@
 {% extends 'base.html' %}
     {% block content %}
-        <table class="table">
+        <table class="table table-bordered table-hover">
             <thead>
                 <tr>
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>Age</th>
-                    <th>Growth</th> 
+     
+                 <th>Name</th>
+             
                 </tr>
             </thead>
             <tbody>
-                {% for pr2 in person %}
+                {% for p in person %}
+
                 <tr>
-                    <td>{{ pr2.id }}</td>
-                    <td>{{ pr2.name }}</td>
-                    <td>{{ pr2.age }}</td>
-                    <td>{{ pr2.growth}}</td>
-                    <td></td>
-                    {% endfor %}
+                   
+ 
+                    <td>
+                        <a href="/fmembers/{{p.id}}">{{p.name}}</a>
+                    </td>
+
+                {% endfor %}
+
+               
+              
                 </tr>
             </tbody>
     </table>
     {% endblock  %}
+  

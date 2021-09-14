@@ -16,11 +16,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.contrib.auth import views as auth_views
+from api.models import PersonResource
+from .views import home
 
+person_resource = PersonResource()
 
 
 urlpatterns = [
+    path("" , home),
     path('admin/', admin.site.urls),
     path("fmembers/", include("fmembers.urls")),
-    
+    path("api/" , include(person_resource.urls))
 ]
