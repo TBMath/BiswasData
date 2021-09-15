@@ -1,1 +1,1 @@
-web: gunicorn.BiswasF.wsgi
+web: gunicorn BiswasF.wsgi
