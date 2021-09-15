@@ -25,7 +25,7 @@ SECRET_KEY = 'rvv&xs=6)p#s+c68z$=q85oonp)x0ha3%0yhy!qaunm+ebx=ai'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["https://biswas-data-tbmath.herokuapp.com/"]
 
 
 # Application definition
